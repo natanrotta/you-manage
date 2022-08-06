@@ -49,7 +49,7 @@ const server = new ApolloServer({
 })
 
 server.start = () => {
-  server.listen(process.env.API_PORT || 5000, '0.0.0.0').then(() => {
+  server.listen(process.env.API_PORT || 3333, '0.0.0.0').then(() => {
     console.log('\x1b[36m%s\x1b[0m', 'SERVERINIT: 👍 GraphQL API ready! 👍')
     console.log('\x1b[37m%s\x1b[0m', 'SERVERINIT: 🚀 Subscriptions ready! 🚀')
   })

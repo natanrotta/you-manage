@@ -47,7 +47,7 @@ services:
     volumes:
       - "./api:/usr/app"
     ports:
-      - "3000:${API_PORT}"
+      - "3333:${API_PORT}"
     environment:
       TZ: "${TZ}"
       VIRTUAL_HOST: "${API_URL}"
@@ -81,7 +81,7 @@ services:
     volumes:
       - "./spa:/usr/app"
     ports:
-      - "${HTTP_PORT}"
+      - "4000:4000"
     environment:
       VIRTUAL_HOST: "${SPA_URL}"
       VIRTUAL_PORT: "${HTTP_PORT}"
