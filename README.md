@@ -43,10 +43,10 @@ yarn install
 
 ```
 # GQL
-127.0.0.1   proxy.you.manage.com
-127.0.0.1   pg.you.manage.com
-127.0.0.1   spa.you.manage.com
-127.0.0.1   api.you-manage.com
+127.0.0.1   proxy.local.you.manage
+127.0.0.1   pg.local.you.manage
+127.0.0.1   spa.local.you.manage
+127.0.0.1   api.local.you.manage
 ```
 
 &nbsp;
@@ -60,10 +60,8 @@ docker-compose up
 &nbsp;
 
 ### 4. Acesse seu navegador: 
-- spa: `http://spa.local.gqlboilerplate.com/`
-- api: `http://api.local.gqlboilerplate.com/`
-- hasura: `http://localhost:8080/console`
-
+- spa: `http://spa.you.manage.com/`
+- api: `http://api.you.manage.com/`
 
 ---
 

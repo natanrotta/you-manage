@@ -47,7 +47,7 @@ services:
     volumes:
       - "./api:/usr/app"
     ports:
-      - "4000:${API_PORT}"
+      - "3000:${API_PORT}"
     environment:
       TZ: "${TZ}"
       VIRTUAL_HOST: "${API_URL}"
