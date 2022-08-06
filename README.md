@@ -1,4 +1,4 @@
-# GQL BOILERPLATE JAVASCRIPT COM HASURA
+# YOU MANAGE JAVASCRIPT
 
 Projeto criado com
 
@@ -10,7 +10,6 @@ Projeto criado com
 ![Docker](https://img.shields.io/badge/Docker-blue)
 ![GraphQl](https://img.shields.io/badge/GraphQl-purple)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-blue)
-![HASURA](https://img.shields.io/badge/HASURA-purple)
 
 &nbsp;
 
