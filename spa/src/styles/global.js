@@ -19,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 14px;
   }
   body {
-    background-color: ${({ theme }) => theme.palette.background.default};
+    background-color: #f3f3f3;
   }
 `
 

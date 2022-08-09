@@ -1,13 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Button, TextField, Typography } from 'components/UI/elements'
-import {
-  LoginContainer,
-  LogoWrapper,
-  Logo,
-  FormPaper,
-  FormItem,
-  ButtonWrapper
-} from './styles'
+
 import { useAuth } from 'hooks/auth'
 import { useGQL } from 'hooks/gql'
 
@@ -22,7 +14,7 @@ const Login = ({ history }) => {
   useEffect(() => {
     const checkAuth = () => {
       if (token) {
-        history.push('/dashboard')
+        history.push('/')
       }
     }
 
@@ -50,62 +42,9 @@ const Login = ({ history }) => {
   }
 
   return (
-    <LoginContainer maxWidth='xs'>
-      <FormPaper elevation={3}>
-        <LogoWrapper>
-          <Typography
-            color='primary'
-            variant='h4'
-          >
-            <Logo />
-          </Typography>
-          <Typography
-            color='primary'
-            variant='h4'
-          >
-            LOGIN
-          </Typography>
-        </LogoWrapper>
-        <form onSubmit={(e) => handleSubmit(e)}>
-          <FormItem>
-            <TextField
-              id='email'
-              label='E-mail'
-              type='email'
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              fullWidth
-              required
-            />
-          </FormItem>
-
-          <FormItem>
-            <TextField
-              id='password'
-              label='Senha'
-              type='password'
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              fullWidth
-              required
-            />
-          </FormItem>
-
-          <ButtonWrapper>
-            <Button
-              color='primary'
-              type='submit'
-              variant='contained'
-              loading={loading}
-              disabled={loading}
-              fullWidth
-            >
-              Entrar
-            </Button>
-          </ButtonWrapper>
-        </form>
-      </FormPaper>
-    </LoginContainer>
+    <div>
+      login
+    </div>
   )
 }
 
